@@ -16,7 +16,7 @@
 /* SECTION 1 */
 .section1 {
   height: 30%;
-  padding-left: 10%;
+  padding-left: 5%;
   /* border: 1px solid green; */
   display: flex;
   flex-direction: row;
