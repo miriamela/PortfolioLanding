@@ -1,36 +1,32 @@
 .body {
-  position: relative;
   background-color: #d0d0d0;
   font-family: "Libre Caslon Display", serif;
-  /* font-family: "Lora", serif; */
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   justify-items: center;
 }
 
 .header {
-  height: 30%;
+  border: 1px solid green;
+  height: 20%;
   width: 100%;
-  margin: 2% 3% 2% 3%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 /* SECTION 1 */
 
 .section1 {
   height: 100%;
   width: 100%;
-  padding-left: 7%;
-  /* border: 1px solid green; */
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: repeat(1, 1fr);
 }
 .name {
   /* border: solid; */
@@ -40,11 +36,21 @@
   align-items: flex-end;
 }
 .name h1 {
-  font-size: 14px;
+  font-size: 19px;
   line-height: 1.3;
 }
+.container1 {
+  width: 100%;
+  grid-column: 2 /4;
+  justify-self: start;
+  align-self: center;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
 .line1 {
-  /* width: 45%; */
   border-bottom: 1px solid black;
   animation-name: scaleLeft;
   animation-fill-mode: forwards;
@@ -58,7 +64,7 @@
     opacity: 1;
   }
   100% {
-    width: 45%;
+    width: 60%;
     opacity: 1;
   }
 }
@@ -66,7 +72,7 @@
   border-radius: 50%;
   border: 2px solid #7d070b;
   position: relative;
-  width: 17%;
+  width: 35%;
   overflow: hidden;
   background-color: black;
   animation-name: entranceBio;
