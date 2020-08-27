@@ -61,15 +61,15 @@
 @keyframes scaleLeft {
   0% {
     -webkit-width: 0px;
-    -o-width: 0px;
+    -moz-width: 0px;
     -webkit-opacity: 1;
-    -o-opacity: 1;
+    -moz-opacity: 1;
   }
   100% {
     -webkit-width: 60%;
-    -o-width: 60%;
+    -moz-width: 60%;
     -webkit-opacity: 1;
-    -o-opacity: 1;
+    -moz-opacity: 1;
   }
 }
 .boxBio {
@@ -88,11 +88,13 @@
 @keyframes entranceBio {
   0% {
     -webkit-transform: scale(0);
+    -moz-transform: scale(0);
     transform: scale(0);
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(1);
+    -moz-transform: scale(1);
     transform: scale(1);
     opacity: 1;
   }
