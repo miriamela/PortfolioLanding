@@ -60,12 +60,16 @@
 }
 @keyframes scaleLeft {
   0% {
-    width: 0px;
-    opacity: 1;
+    -webkit-width: 0px;
+    -o-width: 0px;
+    -webkit-opacity: 1;
+    -o-opacity: 1;
   }
   100% {
-    width: 60%;
-    opacity: 1;
+    -webkit-width: 60%;
+    -o-width: 60%;
+    -webkit-opacity: 1;
+    -o-opacity: 1;
   }
 }
 .boxBio {
