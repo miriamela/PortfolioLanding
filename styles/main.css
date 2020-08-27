@@ -79,7 +79,7 @@
   width: 100%;
   height: 40%;
   display: grid;
-  grid-template-columns: 30% 50% 20%;
+  grid-template-columns: 30% 45% 25%;
   grid-template-rows: repeat(1, 1fr);
 }
 .container {
@@ -141,7 +141,7 @@
 }
 .photo {
   color: white;
-  font-size: 19px;
+  font-size: 16px;
   /* line-height: 1.3; */
 }
 .line2 {
