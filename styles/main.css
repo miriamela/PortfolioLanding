@@ -70,7 +70,7 @@
 .webDev {
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.3;
 }
 /* SECTION 3 */
@@ -79,7 +79,7 @@
   width: 100%;
   height: 40%;
   display: grid;
-  grid-template-columns: 40% 30% 30%;
+  grid-template-columns: 30% 50% 20%;
   grid-template-rows: repeat(1, 1fr);
 }
 .container {
@@ -141,7 +141,7 @@
 }
 .photo {
   color: white;
-  font-size: 11px;
+  font-size: 19px;
   /* line-height: 1.3; */
 }
 .line2 {
@@ -169,7 +169,7 @@
 }
 .portfolio h1 {
   font-family: "Libre Caslon Display";
-  font-size: 14px;
+  font-size: 19px;
   line-height: 1.3;
   font-weight: bold;
 }
@@ -177,61 +177,22 @@
 .hidden {
   visibility: hidden;
 }
-@media all and (min-width: 320px) {
-  .name h1 {
-    font-size: 19px;
-  }
-  .bio {
-    font-size: 16px;
-  }
-  .webDev {
-    font-size: 20px;
-  }
-  .photo {
-    font-size: 13px;
-  }
-  .portfolio h1 {
-    font-size: 19px;
-  }
-}
+
 @media all and (min-width: 641px) {
-  .main {
-    padding: 2% 3% 2% 5%;
-  }
-  .section1 {
-    /* padding-left: 15%; */
-  }
-  .name h1 {
-    font-size: 30px;
-    line-height: 1.3;
-  }
-  .bio {
-    font-size: 24px;
-  }
   .boxDev {
-    width: 30%;
+    max-width: 250px;
   }
   .webDev {
-    font-size: 30px;
+    font-size: 25px;
   }
   .boxPhoto {
-    width: 30%;
+    max-width: 180px;
   }
   .photo {
     font-size: 24px;
   }
   .portfolio h1 {
     font-size: 30px;
-  }
-  @keyframes scaleLeft {
-    0% {
-      width: 0px;
-      opacity: 1;
-    }
-    100% {
-      width: 50%;
-      opacity: 1;
-    }
   }
   @keyframes scaleLeft2 {
     0% {
@@ -239,46 +200,28 @@
       opacity: 1;
     }
     100% {
-      width: 70%;
+      width: 80%;
       opacity: 1;
     }
   }
 }
+@media all and (min-width: 768px) {
+}
 @media all and (min-width: 1200px) {
-  .name h1 {
-    font-size: 40px;
-    line-height: 1.3;
-  }
-  .boxBio {
-    width: 15%;
-  }
-  .bio {
+  .webDev {
     font-size: 34px;
   }
-  .webDev {
-    font-size: 40px;
-  }
-  .section3 {
-    padding-left: 30px;
+  .boxDev {
+    max-width: 320px;
   }
   .photo {
-    font-size: 40px;
+    font-size: 34px;
   }
   .portfolio h1 {
-    font-size: 40px;
+    font-size: 34px;
   }
   .boxPhoto {
-    width: 30%;
-  }
-  @keyframes scaleLeft {
-    0% {
-      width: 0px;
-      opacity: 1;
-    }
-    100% {
-      width: 60%;
-      opacity: 1;
-    }
+    max-width: 200px;
   }
 }
 @media all and (min-width: 2000px) {
