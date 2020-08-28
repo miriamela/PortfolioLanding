@@ -3,6 +3,9 @@
   padding: 0 10% 0 10%;
   height: 10%;
   width: 100%;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
