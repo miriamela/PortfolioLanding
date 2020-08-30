@@ -65,8 +65,11 @@
   justify-content: center;
   align-items: center;
 }
-.contentDev:hover {
+/* .contentDev:hover {
   cursor: pointer;
+} */
+.contentDev a {
+  text-decoration: none;
 }
 .webDev {
   text-align: center;
