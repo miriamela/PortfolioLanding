@@ -101,22 +101,7 @@ a {
   justify-content: center;
   justify-items: center;
   font-size: 15px;
-  /* animation-name: entranceTitleBox;
-  animation-delay: 2s;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  opacity: 0; */
 }
-/* @keyframes entranceTitleBox {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  100% {
-    width: 200px;
-    opacity: 1;
-  }
-} */
 
 .title a:nth-child(1):after {
   content: "·";
