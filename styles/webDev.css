@@ -17,26 +17,36 @@ a {
   height: 10%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 .icon {
   border: 1px solid black;
-  width: 10%;
+  line-height: 1.6;
+  font-size: 15px;
+  width: 70px;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: box-shadow 0.5s;
+}
+.photo {
+  width: 100px;
+  margin-right: 3px;
 }
 .icon:hover {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-/* .icon img {
-  width: 20px;
-} */
 .main {
   /* border: 1px solid green; */
   widows: 100%;
@@ -100,7 +110,7 @@ a {
   background-color: black;
   color: white;
   /* border: 2px solid #7d070b; */
-  border-radius: 25px;
+  border-radius: 27px;
   width: 50%;
   height: 100%;
   display: flex;
@@ -108,6 +118,24 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 15px;
+  transition: box-shadow 0.5s;
+}
+.title:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.title a:nth-child(1) {
+  font-size: 17px;
+}
+.title a:nth-child(1):hover {
+  text-decoration: underline;
+}
+.title a:nth-child(2) {
+  font-size: 13px;
+}
+.title a:nth-child(2):hover {
+  text-decoration: underline;
 }
 .title a:nth-child(1):before {
   content: "·";
@@ -116,4 +144,26 @@ a {
 .title a:nth-child(1):after {
   content: "·";
   color: white;
+}
+
+@media all and (min-width: 641px) {
+  .title a:nth-child(1) {
+    font-size: 20px;
+  }
+}
+@media all and (min-width: 789px) {
+  .title a:nth-child(1) {
+    font-size: 24px;
+  }
+  .title a:nth-child(2) {
+    font-size: 18px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .title a:nth-child(1) {
+    font-size: 30px;
+  }
+  .title a:nth-child(2) {
+    font-size: 20px;
+  }
 }

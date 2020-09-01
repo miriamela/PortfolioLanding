@@ -20,11 +20,12 @@
 }
 .boxDev {
   border-radius: 50%;
-  border: 2px solid #7d070b;
+  /* border: 2px solid #7d070b; */
   position: relative;
   width: 40%;
   overflow: hidden;
   background-color: black;
+  transition: box-shadow 0.5s;
   animation-name: entranceDev;
   animation-delay: 1.3s;
   animation-duration: 2s;
@@ -48,6 +49,11 @@
     -moz-opacity: 1;
     opacity: 1;
   }
+}
+.boxDev:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .boxDev::before {
   content: "";
@@ -91,7 +97,7 @@
   grid-column: 1/3;
   justify-self: center;
   align-self: center;
-  padding-left: 15%;
+  padding-left: 20%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -99,11 +105,12 @@
 }
 .boxPhoto {
   border-radius: 50%;
-  border: 2px solid #7d070b;
+  /* border: 2px solid #7d070b; */
   position: relative;
   width: 40%;
   overflow: hidden;
   background-color: black;
+  transition: box-shadow 0.5s;
   animation-name: entrancePhoto;
   animation-delay: 2.4s;
   animation-duration: 2s;
@@ -123,6 +130,11 @@
     transform: scale(1);
     opacity: 1;
   }
+}
+.boxPhoto:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .boxPhoto::before {
   content: "";
