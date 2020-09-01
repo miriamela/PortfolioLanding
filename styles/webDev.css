@@ -11,44 +11,34 @@ a {
 }
 
 .header {
-  border: 1px solid red;
-  padding: 4%;
+  /* border: 1px solid red; */
+  padding: 0 2% 0 2%;
   width: 100%;
   height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
-/* .icon {
-  width: 30px;
-  height: 30px;
-} */
-.backBox {
-  border-radius: 50%;
-  position: relative;
-  width: 30px;
-  overflow: hidden;
-  /* background-color: black; */
-}
-.backBox::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-.contentBack {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.icon {
+  border: 1px solid black;
+  width: 10%;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contentBack img {
-  color: white;
-  width: 25px;
+.icon:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+/* .icon img {
+  width: 20px;
+} */
 .main {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   widows: 100%;
   height: 90%;
   display: flex;
@@ -57,13 +47,14 @@ a {
   align-items: flex-start;
 }
 .section {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   width: 100%;
+  height: 10%;
 }
-.line {
+.lineFront {
   border-bottom: 1px solid;
   animation-name: entranceTitle;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 @keyframes entranceTitle {
@@ -72,7 +63,24 @@ a {
     opacity: 0;
   }
   100% {
-    width: 34%;
+    width: 20%;
+    opacity: 1;
+  }
+}
+.lineBack {
+  border-bottom: 1px solid;
+  animation-name: entranceTitle2;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes entranceTitle2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 30%;
     opacity: 1;
   }
 }
@@ -91,18 +99,20 @@ a {
 .title {
   background-color: black;
   color: white;
-  border: 2px solid #7d070b;
+  /* border: 2px solid #7d070b; */
   border-radius: 25px;
-  /* width: 60%; */
-  width: 200px;
+  width: 50%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
   font-size: 15px;
 }
-
+.title a:nth-child(1):before {
+  content: "·";
+  color: white;
+}
 .title a:nth-child(1):after {
   content: "·";
   color: white;
