@@ -1,9 +1,10 @@
 body {
-  height: 100vh;
   width: 100%;
+  overflow-y: scroll;
   font-family: "Libre Caslon Display", serif;
   color: black;
   background-color: #d0d0d0;
+  overflow: scroll;
 }
 a {
   color: inherit;
@@ -14,7 +15,7 @@ a {
   /* border: 1px solid red; */
   padding: 0 2% 0 2%;
   width: 100%;
-  height: 10%;
+  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -48,9 +49,9 @@ a {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .main {
-  /* border: 1px solid green; */
-  widows: 100%;
-  height: 90%;
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -59,7 +60,7 @@ a {
 .section {
   /* border: 1px solid orange; */
   width: 100%;
-  height: 10%;
+  height: 150px;
 }
 .lineFront {
   border-bottom: 1px solid;
@@ -73,14 +74,14 @@ a {
     opacity: 0;
   }
   100% {
-    width: 20%;
+    width: 17%;
     opacity: 1;
   }
 }
 .lineBack {
   border-bottom: 1px solid;
   animation-name: entranceTitle2;
-  animation-duration: 2s;
+  animation-duration: 1.8s;
   animation-delay: 0.2s;
   animation-fill-mode: forwards;
 }
@@ -90,7 +91,7 @@ a {
     opacity: 0;
   }
   100% {
-    width: 30%;
+    width: 12%;
     opacity: 1;
   }
 }
@@ -107,30 +108,58 @@ a {
   align-items: center;
 }
 .title {
+  border-radius: 30px;
   background-color: black;
   color: white;
-  /* border: 2px solid #7d070b; */
-  border-radius: 27px;
-  width: 50%;
-  height: 100%;
+  width: 45%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
+  font-size: 10px;
   transition: box-shadow 0.5s;
+  animation-name: entrance2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes entrance2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 45%;
+    opacity: 1;
+  }
+}
+.links {
+  opacity: 0;
+  animation-name: extra;
+  animation-duration: 0.3s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes extra {
+  0% {
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .title:hover {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 .title a:nth-child(1) {
-  font-size: 17px;
+  font-size: 14px;
 }
-.title a:nth-child(1):hover {
+/* .title a:nth-child(1):hover {
   text-decoration: underline;
-}
+} */
 .title a:nth-child(2) {
   font-size: 13px;
 }
@@ -145,25 +174,99 @@ a {
   content: "·";
   color: white;
 }
+.title p {
+  text-align: center;
+}
 
 @media all and (min-width: 641px) {
+  .main {
+    height: 1000px;
+  }
+  .section {
+    height: 300px;
+  }
   .title a:nth-child(1) {
     font-size: 20px;
   }
+  .box1 {
+    max-width: 21%;
+  }
 }
 @media all and (min-width: 789px) {
+  .title {
+    height: 30%;
+    font-size: 15px;
+  }
   .title a:nth-child(1) {
     font-size: 24px;
   }
   .title a:nth-child(2) {
     font-size: 18px;
   }
+  .box1 {
+    max-width: 18%;
+  }
+  @keyframes entranceTitle2 {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 15%;
+      opacity: 1;
+    }
+  }
 }
 @media all and (min-width: 1200px) {
+  .main {
+    height: 1300px;
+  }
+  .title {
+    height: 30%;
+  }
   .title a:nth-child(1) {
     font-size: 30px;
   }
   .title a:nth-child(2) {
     font-size: 20px;
   }
+}
+
+/* box for picture */
+.box1 {
+  border-radius: 30px;
+  border: 2px solid black;
+  box-sizing: content-box;
+  position: relative;
+  width: 23%;
+  overflow: hidden;
+  background-color: black;
+  transition: box-shadow 0.5s;
+}
+.box1::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.box1:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.trialLine {
+  width: 5%;
+  border-bottom: 1px solid black;
+}
+
+.pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+img {
+  width: 100%;
+  object-fit: fill;
 }
