@@ -265,3 +265,23 @@
     }
   }
 }
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  width: 40%;
+  height: 50px;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 7px 40px 1px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: -1px 7px 40px 1px rgba(0, 0, 0, 0.46);
+  box-shadow: -1px 7px 40px 1px rgba(0, 0, 0, 0.46);
+  opacity: 0;
+}
