@@ -238,9 +238,9 @@ a {
 .image {
   width: 30%;
   background-color: whitesmoke;
-  -webkit-box-shadow: -1px 7px 40px 0px rgba(0, 0, 0, 0.46);
-  -moz-box-shadow: -1px 7px 40px 0px rgba(0, 0, 0, 0.46);
-  box-shadow: -1px 7px 40px 0px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: -1px 7px 40px 1px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: -1px 7px 40px 1px rgba(0, 0, 0, 0.46);
+  box-shadow: -1px 7px 40px 1px rgba(0, 0, 0, 0.46);
   border: 1px solid transparent;
   border-radius: 7px;
   opacity: 0;
@@ -260,42 +260,3 @@ a {
   width: 100%;
   object-fit: contain;
 }
-
-/* box for picture */
-/* .box1 {
-  border-radius: 30px;
-  border: 2px solid black;
-  box-sizing: content-box;
-  position: relative;
-  width: 23%;
-  overflow: hidden;
-  background-color: black;
-  transition: box-shadow 0.5s;
-}
-.box1::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-.box1:hover {
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-.trialLine {
-  width: 5%;
-  border-bottom: 1px solid black;
-}
-
-.pic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-img {
-  width: 100%;
-  object-fit: fill;
-} */
