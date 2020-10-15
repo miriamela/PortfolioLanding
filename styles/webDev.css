@@ -115,6 +115,7 @@ a {
   align-items: center;
 }
 .title {
+  border: 1px solid black;
   border-radius: 28px;
   /* background-color: black; */
   background-color: #d0d0d0;
@@ -131,9 +132,6 @@ a {
   animation-name: entrance2;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 @keyframes entrance2 {
   0% {
@@ -145,11 +143,11 @@ a {
     opacity: 1;
   }
 }
-/* .title:hover {
+.title {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-} */
+}
 
 .links {
   text-align: center;
