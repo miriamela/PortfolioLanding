@@ -4,8 +4,6 @@ body {
   overflow-y: scroll;
   font-family: "Libre Caslon Display", serif;
   color: black;
-  /* background-color: #d0d0d0; */
-  /* background-color: #0c8c3f; */
   background-color: #5e90be;
   overflow: scroll;
 }
@@ -15,7 +13,6 @@ a {
 }
 /* header */
 .header {
-  /* border: 1px solid red; */
   padding: 0 2% 0 2%;
   width: 100%;
   height: 60px;
@@ -23,7 +20,6 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #d0d0d0; */
 }
 .menu {
   display: flex;
@@ -55,17 +51,14 @@ a {
 }
 /* main */
 .main {
-  /* border: 1px solid blue; */
   width: 100%;
   overflow: scroll;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  /* background-color: #cce7ff; */
 }
 .section {
-  /* border: 1px solid orange; */
   width: 100%;
   height: 180px;
 }
@@ -117,9 +110,7 @@ a {
 .title {
   border: 1px solid black;
   border-radius: 28px;
-  /* background-color: black; */
   background-color: #d0d0d0;
-  /* color: white; */
   color: black;
   width: 50%;
   height: 45px;
@@ -148,7 +139,6 @@ a {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
 .links {
   text-align: center;
   opacity: 0;
@@ -165,13 +155,9 @@ a {
     opacity: 1;
   }
 }
-
 .title a:nth-child(1) {
   font-size: 14px;
 }
-/* .title a:nth-child(1):hover {
-  text-decoration: underline;
-} */
 .title a:nth-child(2) {
   font-size: 13px;
 }
@@ -189,7 +175,6 @@ a {
 .title p {
   text-align: center;
 }
-
 @media all and (min-width: 641px) {
   .main {
     height: 1000px;

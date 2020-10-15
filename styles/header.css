@@ -1,7 +1,9 @@
+/* Palette:
+  background-color: #d0d0d0; white-smoke
+  background-color: #f2925e; orange
+  background-color: #b6bf4b; green (specific for photography section) 
+*/
 .body {
-  background-color: #d0d0d0;
-  background-color: #f2925e;
-  background-color: #b6bf4b;
   background-color: #bf7571;
   font-family: "Libre Caslon Display", serif;
   width: 100%;
@@ -11,9 +13,7 @@
   justify-content: center;
   justify-items: center;
 }
-
 .header {
-  /* border: 1px solid green; */
   height: 20%;
   width: 100%;
   display: flex;
@@ -22,17 +22,14 @@
   align-items: center;
 }
 /* SECTION 1 */
-
 .section1 {
   height: 100%;
   width: 100%;
-  /* border: 1px solid green; */
   display: grid;
   grid-template-columns: 35% 30% 33%;
   grid-template-rows: repeat(1, 1fr);
 }
 .name {
-  /* border: solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,9 +74,8 @@
   position: relative;
   width: 35%;
   overflow: hidden;
-  /* background-color: black; */
   background-color: #d0d0d0;
-  transition: box-shadow 0.6s;
+  /* transition: box-shadow 0.6s; */
   animation-name: entranceBio;
   animation-delay: 1.03s;
   animation-duration: 1s;
